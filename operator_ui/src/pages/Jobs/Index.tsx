@@ -95,7 +95,7 @@ const renderBody = ({
 export const JobsIndex = ({ pageSize = 10, match }: IndexProps) => {
   React.useEffect(() => {
     document.title = 'Jobs'
-  })
+  }, [])
 
   const [jobs, setJobs] = React.useState<
     jsonapi.PaginatedApiResponse<models.JobSpec[]>['data']
@@ -193,3 +193,5 @@ export const JobsIndex = ({ pageSize = 10, match }: IndexProps) => {
     </Content>
   )
 }
+
+export default JobsIndex
