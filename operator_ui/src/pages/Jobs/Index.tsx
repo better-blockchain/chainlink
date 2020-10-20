@@ -40,7 +40,7 @@ const renderBody = ({
     return (
       <TableRow>
         <TableCell component="th" scope="row" colSpan={3}>
-          {error}
+          {JSON.stringify(error)}
         </TableCell>
       </TableRow>
     )
